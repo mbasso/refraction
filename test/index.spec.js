@@ -48,7 +48,11 @@ describe('Refraction', () => {
     global.performance = {};
     refraction.addToHistory('testChannel', { value: 'foo' });
     const history = refraction.getHistory();
-    expect(history[history.length - 1]).toMatch({
+    if (history[history.length - 1].time) {
+      expect(history[history.length - 1].time).toMatch(/\d+.\d{0,}/);
+    }
+    delete history[history.length - 1].time;
+    expect(history[history.length - 1]).toEqual({
       channel: 'testChannel',
       param: {
         value: 'foo',
@@ -113,7 +117,11 @@ describe('Refraction', () => {
     refraction.addToHistory('testChannel', { value: 'foo' });
     const history = refraction.getHistory();
     expect(Array.isArray(history)).toEqual(true);
-    expect(history[0]).toMatch({
+    if (history[0].time) {
+      expect(history[0].time).toMatch(/\d+.\d{0,}/);
+    }
+    delete history[0].time;
+    expect(history[0]).toEqual({
       channel: 'testChannel',
       param: {
         value: 'foo',
