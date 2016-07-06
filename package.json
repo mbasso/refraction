@@ -30,7 +30,7 @@
     "docs:prepare": "gitbook install",
     "docs:watch": "npm run docs:prepare && gitbook serve",
     "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build && cp docs/Example.png _book/gitbook/images && cp docs/DataFlow.png _book/gitbook/images",
-    "docs:publish": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:mbasso/refraction gh-pages --force"
+    "docs:publish": "npm run docs:build && gh-pages -d _book"
   },
   "repository": {
     "type": "git",
@@ -72,6 +72,7 @@
     "eslint-plugin-jsx-a11y": "1.3.0",
     "eslint-plugin-react": "5.1.1",
     "expect": "1.8.0",
+    "gh-pages": "0.11.0",
     "gitbook-cli": "2.2.0",
     "istanbul": "0.4.3",
     "mocha": "2.2.5",

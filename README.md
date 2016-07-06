@@ -26,7 +26,7 @@ If you aren't using npm in your project, you can include refraction using UMD bu
 
 ## Usage
 
-Refraction exposes only a little set of APIs, what is important to know is it's concept. A complete guide about usage can be found [here](https://mbasso.github.com/refraction/docs/basics/README.md).
+Refraction exposes only a little set of APIs, what is important to know is it's concept. A complete guide about usage can be found [here](https://mbasso.github.io/refraction/docs/basics/index.html).
 However, here is a little gist:
 
 ```js
@@ -79,16 +79,16 @@ refractionInstance.routeChange('home');
 
 ## Documentation
 
-* [Introduction](https://mbasso.github.com/refraction/docs/introduction/README.html)
-* [Basics](https://mbasso.github.com/refraction/docs/basics/README.html)
-* [Glossary](https://mbasso.github.com/refraction/docs/Glossary.html)
-* [API Reference](https://mbasso.github.com/refraction/docs/api/README.html)
+* [Introduction](https://mbasso.github.io/refraction/docs/introduction/index.html)
+* [Basics](https://mbasso.github.io/refraction/docs/basics/index.html)
+* [Glossary](https://mbasso.github.io/refraction/docs/Glossary.html)
+* [API Reference](https://mbasso.github.io/refraction/docs/api/index.html)
 
 ## Examples
 
 You can find a series of examples directly in this repository under `examples` folder. Alternatively, you can check [awesome-refraction](https://github.com/mbasso/awesome-refraction).
 
-If you want to run examples, check out the instruction [here](https://mbasso.github.com/refraction/docs/introduction/Examples.html).
+If you want to run examples, check out the instruction [here](https://mbasso.github.io/refraction/docs/introduction/Examples.html).
 
 # Chat
 
