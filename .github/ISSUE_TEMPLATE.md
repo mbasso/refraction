@@ -3,6 +3,7 @@
 - [ ] Bug
 - [ ] Improvement
 - [ ] Feature
+- [ ] Other
 
 **Description**
 
