@@ -1,4 +1,0 @@
-**/dist/**
-**/node_modules/**
-examples/**/webpack.config.js
-examples/**/server.js
