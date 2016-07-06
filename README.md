@@ -1,9 +1,9 @@
 # Refraction
 
-[![Travis](https://img.shields.io/travis/mbasso/refraction.svg?maxAge=2592000)](https://travis-ci.org/mbasso/refraction)
+[![Build Status](https://travis-ci.org/mbasso/refraction.svg?branch=master)](https://travis-ci.org/mbasso/refraction)
 [![npm version](https://img.shields.io/npm/v/refraction.svg)](https://www.npmjs.com/package/refraction)
 [![npm downloads](https://img.shields.io/npm/dm/refraction.svg?maxAge=2592000)](https://www.npmjs.com/package/refraction)
-[![Coveralls](https://img.shields.io/coveralls/mbasso/refraction.svg?maxAge=2592000)](https://coveralls.io/github/mbasso/refraction)
+[![Coverage Status](https://coveralls.io/repos/github/mbasso/refraction/badge.svg?branch=master)](https://coveralls.io/github/mbasso/refraction?branch=master)
 [![Join the chat at https://gitter.im/mbasso/refraction](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mbasso/refraction?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > A guard that represent central point of control in your application.
