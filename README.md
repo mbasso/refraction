@@ -1,5 +1,7 @@
 # Refraction
 
+[![Join the chat at https://gitter.im/mbasso/refraction](https://badges.gitter.im/mbasso/refraction.svg)](https://gitter.im/mbasso/refraction?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Travis](https://img.shields.io/travis/mbasso/refraction.svg?maxAge=2592000)](https://travis-ci.org/mbasso/refraction)
 [![npm version](https://img.shields.io/npm/v/refraction.svg)](https://www.npmjs.com/package/refraction)
 [![npm downloads](https://img.shields.io/npm/dm/refraction.svg?maxAge=2592000)](https://www.npmjs.com/package/refraction)
