@@ -1,0 +1,17 @@
+{
+  "gitbook": "2.4.3",
+  "title": "Refraction",
+  "structure": {
+    "summary": "docs/Summary.md"
+  },
+  "plugins": ["edit-link", "prism", "-highlight", "github", "anker-enable"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/mbasso/refraction/tree/master",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/mbasso/refraction/"
+    }
+  }
+}
