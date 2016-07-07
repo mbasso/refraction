@@ -1,12 +1,14 @@
-export default class {
+export default class History {
+
+  items = [];
+  limit = 200;
 
   constructor(limit) {
     this.setLimit(limit);
-    this.items = [];
   }
 
   setLimit(limit) {
-    this.limit = Number(limit) > 0 ? Number(limit) : 200;
+    this.limit = Number(limit) > 0 ? Number(limit) : this.limit;
   }
 
   add(payload) {
