@@ -6,13 +6,13 @@
 [![Coverage Status](https://coveralls.io/repos/github/mbasso/refraction/badge.svg?branch=master)](https://coveralls.io/github/mbasso/refraction?branch=master)
 [![Join the chat at https://gitter.im/mbasso/refraction](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mbasso/refraction?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> A guard that represent central point of control in your application.
+> A guard that represents a central point of control in your application.
 
-Modern javascript application are more often organized in modules, they are awesome but they involve some problems that we cannot avoid.
-When we are writing an application in this way, we must consider that all our modules might be independent, testable, instantly re-usable and secure.
-Refraction purpose is making these things real in an easy way using some design patterns.
-Since modules might be independent, with no inter-module dependencies, refraction add an intermediate layer that handle all messages that an application use, to allow the communication between modules. In this way modules haven't to know each others but only this layer that is responsible to manage all the communications. If we want to change a module, we can do it without worries.
-Modules have a very limited knowledge of what's going in the rest of the system. For this reason we can define refraction as a guard, a central point of control.
+Modern javascript applications are often organized in to modules, which are awesome but have some problems that we can't avoid.
+When we are writing an application in this way, we must consider that all our modules must be independent, testable, instantly reusable and secure.
+Refraction's purpose is to make these concerns take care of themselves by using some design patterns.
+Since modules might be independent, with no inter-module dependencies, Refraction adds an intermediate layer that handles all messages that an application uses, allowing communication between modules. This way, modules don't need to know each other, only the layer that is responsible for managaging communication. If we want to change a module, we can do so without worrying about how other modules use it.
+Modules have a very limited knowledge of what's going in the rest of the system. For this reason, we can define refraction as a guard, a central point of control.
 
 ## Installation
 
@@ -22,12 +22,12 @@ You can install Refraction using [npm](https://www.npmjs.com/package/refraction)
 npm install --save refraction
 ```
 
-If you aren't using npm in your project, you can include refraction using UMD build in the dist folder with `<script>` tag.
+If you aren't using npm in your project, you can include Refraction using UMD build in the dist folder with `<script>` tag.
 
 ## Usage
 
-Refraction exposes only a little set of APIs, what is important to know is it's concept. A complete guide about usage can be found [here](https://mbasso.github.io/refraction/docs/basics/index.html).
-However, here is a little gist:
+Refraction exposes only a small set of APIs. What is important to know is it's concept. A complete guide about usage can be found [here](https://mbasso.github.io/refraction/docs/basics/index.html).
+However, here is the gist:
 
 ```js
 import Refraction from 'refraction';
@@ -86,14 +86,14 @@ refractionInstance.routeChange('home');
 
 ## Examples
 
-You can find a series of examples directly in this repository under `examples` folder. Alternatively, you can check [awesome-refraction](https://github.com/mbasso/awesome-refraction).
+You can find a series of examples in this repository under the `examples` folder. Alternatively, you can check [awesome-refraction](https://github.com/mbasso/awesome-refraction).
 
-If you want to run examples, check out the instruction [here](https://mbasso.github.io/refraction/docs/introduction/Examples.html).
+If you want to run examples, check out the instructions [here](https://mbasso.github.io/refraction/docs/introduction/Examples.html).
 
 # Chat
 
 This project has an official chat channel on [gitter](https://gitter.im/).
-This is the right place to talk about refraction with us and others developers.
+This is the right place to talk about Refraction with us and others developers.
 Feel free to participate.
 
 Join chat [here](https://gitter.im/mbasso/refraction).
@@ -120,4 +120,4 @@ Refraction is inspired by different articles and tools:
 ## Copyright and License
 Copyright (c) 2016, Matteo Basso.
 
-refraction source code is licensed under the [MIT License](https://github.com/mbasso/refraction/blob/master/LICENSE.md).
+Refraction source code is licensed under the [MIT License](https://github.com/mbasso/refraction/blob/master/LICENSE.md).
