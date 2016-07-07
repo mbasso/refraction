@@ -8,7 +8,7 @@
 
 > A guard that represents a central point of control in your application.
 
-Modern javascript applications are often organized in to modules, which are awesome but have some problems that we can't avoid.
+Modern javascript applications are often organized into modules, which are awesome but have some problems that we can't avoid.
 When we are writing an application in this way, we must consider that all our modules must be independent, testable, instantly reusable and secure.
 Refraction's purpose is to make these concerns take care of themselves by using some design patterns.
 Since modules might be independent, with no inter-module dependencies, Refraction adds an intermediate layer that handles all messages that an application uses, allowing communication between modules. This way, modules don't need to know each other, only the layer that is responsible for managaging communication. If we want to change a module, we can do so without worrying about how other modules use it.
