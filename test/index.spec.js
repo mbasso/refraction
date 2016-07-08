@@ -110,6 +110,15 @@ describe('Refraction', () => {
     expect(refraction.history.limit).toEqual(300);
   });
 
+  it('should clear history', () => {
+    refraction.addToHistory('testChannel', { value: 'foo' });
+    let history = refraction.getHistory();
+    expect(Array.isArray(history)).toEqual(true);
+    refraction.clearHistory();
+    history = refraction.getHistory();
+    expect(history).toEqual([]);
+  });
+
   it('should get history', () => {
     global.performance = {
       now: () => 100,

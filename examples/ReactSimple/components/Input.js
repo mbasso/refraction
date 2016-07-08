@@ -1,11 +1,13 @@
 /* eslint-disable import/no-unresolved */
 import React from 'react';
+import Label from './Label';
 /* eslint-enable import/no-unresolved */
 
-export default class extends React.Component {
+export default class Input extends React.Component {
 
   static propTypes = {
     value: React.PropTypes.string.isRequired,
+    label: React.PropTypes.string,
   }
 
   static defaultProps = {
@@ -13,8 +15,12 @@ export default class extends React.Component {
   }
 
   render() {
+    const { label, ...others } = this.props;
     return (
-      <input {...this.props} />
+      <div>
+        <Label text={label} />
+        <input style={{ marginLeft: 8 }} {...others} />
+      </div>
     );
   }
 }

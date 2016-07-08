@@ -1,9 +1,6 @@
-export default class {
+export default class Mediator {
 
-  constructor() {
-    this.subscribers = [];
-    this.publish = ::this.publish;
-  }
+  subscribers = [];
 
   subscribe(subscriber) {
     if (this.subscribers.indexOf(subscriber) === -1) {
@@ -18,7 +15,7 @@ export default class {
     }
   }
 
-  publish(channel, param) {
+  publish = (channel, param) => {
     this.subscribers.forEach((subscriber) => {
       if (!subscriber) {
         this.unsubscribe(subscriber);

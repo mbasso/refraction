@@ -5,10 +5,14 @@
   </head>
   <body>
     <div id="root">
-      <p>Write something in the input field and then Click the button</p>
-      <input id="input" value="" />
-      <p id="label"></p>
-      <button id="button">Play!</button>
+      <p>Write your data and click play.</p>
+      <p>Name: <input id="name" value="" /></p>
+      <p>Surname: <input id="surname" value="" /></p>
+      <p>Address: <input id="address" value="" /></p>
+      <p>Name: <span id="label"></span></p>
+      <br />
+      <button class="button" id="playButton">Play!</button>
+      <button class="button" id="clearButton">Clear History</button>
     </div>
     <script src="/static/bundle.js"></script>
   </body>

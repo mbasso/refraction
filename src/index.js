@@ -1,18 +1,18 @@
 import Mediator from './Mediator';
 import History from './History';
 
-export default class {
+export default class Refraction {
+
+  middlewares = [];
+
+  mediator = new Mediator();
+  history = new History();
 
   constructor(middlewares = []) {
-    this.mediator = new Mediator();
-    this.history = new History();
-    this.middlewares = [];
-    this.addToHistory = ::this.addToHistory;
-    this.applyMiddleware = ::this.applyMiddleware;
     this.applyMiddleware(...middlewares, this.addToHistory);
   }
 
-  applyMiddleware(...middlewares) {
+  applyMiddleware = (...middlewares) => {
     if (middlewares.length === 1) {
       this.middlewares.push(middlewares[0]);
     } else if (middlewares.length > 0) {
@@ -20,7 +20,7 @@ export default class {
     }
   }
 
-  addToHistory(channel, param) {
+  addToHistory = (channel, param) => {
     this.history.add({
       channel,
       time: (performance && performance.now) ? performance.now() : null,
@@ -48,6 +48,10 @@ export default class {
 
   setHistoryLimit(limit) {
     this.history.setLimit(limit);
+  }
+
+  clearHistory() {
+    this.history.clear();
   }
 
   getHistory() {

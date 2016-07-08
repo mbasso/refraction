@@ -3,8 +3,8 @@ import Button from '../components/Button';
 import { connect } from 'refraction-react';
 /* eslint-enable import/no-unresolved */
 
-export default connect({
+export default (func) => connect({
   actions: {
-    onClick: 'play',
+    onClick: func,
   },
 })(Button);

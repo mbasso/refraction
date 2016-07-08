@@ -5,23 +5,34 @@ import refraction from './refraction/';
 /* eslint-enable import/no-unresolved */
 
 (() => {
-  const input = document.getElementById('input');
-  input.onInputChange = ({ payload }) => {
-    input.value = payload;
+  const setButton = (name, action) => {
+    const button = document.getElementById(name);
+    button.onclick = refraction[action];
   };
-  refraction.subscribe(input);
+
+  const setInput = (name, subscription) => {
+    const input = document.getElementById(name);
+    input[subscription] = ({ payload }) => {
+      input.value = payload;
+    };
+    refraction.subscribe(input);
+
+    Rx.Observable
+      .fromEvent(input, 'keydown')
+      .debounce(500)
+      .subscribe(refraction[subscription]);
+  };
+
+  setInput('name', 'onNameChange');
+  setInput('surname', 'onSurnameChange');
+  setInput('address', 'onAddressChange');
+
+  setButton('playButton', 'play');
+  setButton('clearButton', 'clear');
 
   const label = document.getElementById('label');
-  label.onInputChange = ({ payload }) => {
+  label.onNameChange = ({ payload }) => {
     label.innerHTML = payload;
   };
   refraction.subscribe(label);
-
-  const button = document.getElementById('button');
-  button.onclick = refraction.play;
-
-  Rx.Observable
-    .fromEvent(input, 'keydown')
-    .debounce(500)
-    .subscribe(refraction.onInputChange);
 })();
