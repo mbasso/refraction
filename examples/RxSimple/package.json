@@ -18,7 +18,7 @@
   "homepage": "https://mbasso.github.io/refraction",
   "dependencies": {
     "rx": "4.1.0",
-    "refraction-player": "1.0.0",
+    "refraction-player": "1.0.2",
     "refraction": "1.1.0"
   },
   "devDependencies": {

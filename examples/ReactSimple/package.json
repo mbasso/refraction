@@ -20,8 +20,8 @@
     "babel-polyfill": "6.3.14",
     "react": "15.1.0",
     "react-dom": "15.1.0",
-    "refraction-react": "1.0.0",
-    "refraction-player": "1.0.0",
+    "refraction-react": "1.0.2",
+    "refraction-player": "1.0.2",
     "refraction": "1.1.0"
   },
   "devDependencies": {
