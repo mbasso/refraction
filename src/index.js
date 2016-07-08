@@ -50,6 +50,10 @@ export default class Refraction {
     this.history.setLimit(limit);
   }
 
+  clearHistory() {
+    this.history.clear();
+  }
+
   getHistory() {
     return this.history.get();
   }

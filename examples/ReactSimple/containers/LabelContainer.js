@@ -5,6 +5,6 @@ import { connect } from 'refraction-react';
 
 export default connect({
   subscriptions: {
-    onInputChange: ({ payload }) => ({ text: payload }),
+    onNameChange: ({ payload }) => ({ text: payload }),
   },
 })(Label);

@@ -1,6 +1,6 @@
 {
   "name": "refraction-react-example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Refraction example using react and player",
   "scripts": {
     "start": "node server.js",
@@ -22,7 +22,7 @@
     "react-dom": "15.1.0",
     "refraction-react": "1.0.0",
     "refraction-player": "1.0.0",
-    "refraction": "1.0.0"
+    "refraction": "1.1.0"
   },
   "devDependencies": {
     "babel-core": "6.3.15",

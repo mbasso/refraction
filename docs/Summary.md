@@ -20,6 +20,7 @@
   * [publish(channel, param)](/docs/api/Publish.md)
   * [setHistoryLimit(limit = 200)](/docs/api/SetHistoryLimit.md)
   * [getHistory()](/docs/api/GetHistory.md)
+  * [clearHistory()](/docs/api/ClearHistory.md)
 * [Change Log](/CHANGELOG.md)
 * [Authors](/docs/Authors.md)
 * [Chat](/docs/Chat.md)

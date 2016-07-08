@@ -6,18 +6,41 @@ import play from 'refraction-player';
 
 class Refract extends Refraction {
 
-  onInputChange = (e) => {
-    this.publish('onInputChange', {
+  onNameChange = (e) => {
+    this.publishEvent(e, 'onNameChange');
+  }
+
+  onSurnameChange = (e) => {
+    this.publishEvent(e, 'onSurnameChange');
+  }
+
+  onAddressChange = (e) => {
+    this.publishEvent(e, 'onAddressChange');
+  }
+
+  publishEvent = (e, channel) => {
+    this.publish(channel, {
       type: 'event',
       payload: e,
     });
   }
 
   play = () => {
+    const track = [...this.getHistory()];
+
+    // clear fields
+    this.onNameChange('');
+    this.onSurnameChange('');
+    this.onAddressChange('');
+
     play({
       refraction: this,
-      track: this.getHistory(),
+      track,
     });
+  }
+
+  clear = () => {
+    this.clearHistory();
   }
 
 }

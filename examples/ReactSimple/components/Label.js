@@ -2,7 +2,7 @@
 import React from 'react';
 /* eslint-enable import/no-unresolved */
 
-export default class extends React.Component {
+export default class Label extends React.Component {
 
   static propTypes = {
     text: React.PropTypes.string.isRequired,
@@ -10,6 +10,9 @@ export default class extends React.Component {
 
   static defaultProps = {
     text: '',
+    style: {
+      display: 'inline-block',
+    },
   }
 
   render() {

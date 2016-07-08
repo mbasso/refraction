@@ -1,6 +1,6 @@
 {
   "name": "refraction-rx-example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Refraction example using Rx",
   "scripts": {
     "start": "node server.js",
@@ -19,7 +19,7 @@
   "dependencies": {
     "rx": "4.1.0",
     "refraction-player": "1.0.0",
-    "refraction": "1.0.0"
+    "refraction": "1.1.0"
   },
   "devDependencies": {
     "babel-core": "6.3.15",

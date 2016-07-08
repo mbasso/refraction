@@ -9,13 +9,13 @@ export default class Button extends React.Component {
   }
 
   static defaultProps = {
-    text: 'Play!',
+    text: '',
   }
 
   render() {
     const { text, ...others } = this.props;
     return (
-      <button {...others} >{text}</button>
+      <button style={{ marginRight: '4px' }} {...others} >{text}</button>
     );
   }
 }

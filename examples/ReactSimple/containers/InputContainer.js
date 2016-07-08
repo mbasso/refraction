@@ -3,12 +3,12 @@ import Input from '../components/Input';
 import { connect } from 'refraction-react';
 /* eslint-enable import/no-unresolved */
 
-export default connect({
+export default (changeEvent) => connect({
   actions: {
-    onChange: 'onInputChange',
+    onChange: changeEvent,
   },
   subscriptions: {
     // update his own value
-    onInputChange: ({ payload }) => ({ value: payload }),
+    [changeEvent]: ({ payload }) => ({ value: payload }),
   },
 })(Input);

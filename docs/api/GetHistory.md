@@ -1,6 +1,6 @@
 # `getHistory()`
 
-Return the history of published events.
+Returns the history of published events.
 
 #### Returns
 

@@ -9,6 +9,7 @@ Here is the list of methods that you can use on its instance:
 - [publish(channel, param)](/Publish.md)
 - [setHistoryLimit(limit)](/SetHistoryLimit.md)
 - [getHistory()](/GetHistory.md)
+- [clearHistory()](/ClearHistory.md)
 
 ### Importing
 
