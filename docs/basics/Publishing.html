@@ -44,7 +44,7 @@
     <body>
         
         
-    <div class="book" data-level="2.3" data-basepath="../.." data-revision="Fri Jul 08 2016 17:57:48 GMT+0200 (W. Europe Summer Time)">
+    <div class="book" data-level="2.3" data-basepath="../.." data-revision="Thu Jul 14 2016 09:36:26 GMT+0200 (W. Europe Summer Time)">
     
 
 <div class="book-summary">
@@ -545,7 +545,7 @@
                     <section class="normal" id="section-">
                     
                         <a id="edit-link" href="https://github.com/mbasso/refraction/tree/master/docs\basics\Publishing.md" class="btn fa fa-edit pull-left">&nbsp;&nbsp;Edit This Page</a><h1 id="publishing">Publishing</h1>
-<p>Publishing events is the only way that your application should use to allow modules communicating. Essentially we have to define some <a href="docs/Glossary.md">channels</a> on which we can pass values. For example if we want to communicate to other modules that a user logged in, we can define a channel called <code>onUserLogin</code> that bring the username. This looks like this:</p>
+<p>Publishing events is the only way that your application should use to allow modules communicating. Essentially we have to define some <a href="../Glossary.html">channels</a> on which we can pass values. For example if we want to communicate to other modules that a user logged in, we can define a channel called <code>onUserLogin</code> that bring the username. This looks like this:</p>
 <pre><code class="lang-js">refractionInstance<span class="token punctuation">.</span><span class="token function">publish</span><span class="token punctuation">(</span><span class="token string">&apos;onUserLogin&apos;</span><span class="token punctuation">,</span> username<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <p>All works fine, however, we want to do some stuff before publishing events, we want to check if a module is allowed to do this and we want to centralize all.
