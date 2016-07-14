@@ -1,6 +1,6 @@
 # Api Reference
 
-As described before Refraction exports only one class, you need a set of other library to use all its functionality, see [Ecosystem](../docs/introduction/Ecosystem.md) for more information.
+As described before Refraction exports only one class, you need a set of other library to use all its functionality, see [Ecosystem](../introduction/Ecosystem.md) for more information.
 Here is the list of methods that you can use on its instance:
 
 - [constructor(middlewares = [])](/Constructor.md)

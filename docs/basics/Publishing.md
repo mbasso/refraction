@@ -1,6 +1,6 @@
 # Publishing
 
-Publishing events is the only way that your application should use to allow modules communicating. Essentially we have to define some [channels](/docs/Glossary.md) on which we can pass values. For example if we want to communicate to other modules that a user logged in, we can define a channel called `onUserLogin` that bring the username. This looks like this:
+Publishing events is the only way that your application should use to allow modules communicating. Essentially we have to define some [channels](../Glossary.md) on which we can pass values. For example if we want to communicate to other modules that a user logged in, we can define a channel called `onUserLogin` that bring the username. This looks like this:
 
 ```js
 refractionInstance.publish('onUserLogin', username);

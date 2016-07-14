@@ -1,6 +1,6 @@
 # Subscribing
 
-After that we have prepared Refraction and we have defined channels, we have to subscribe something to these channels. In Refraction we can use [subscribe](/docs/api/Subscribe.md) to do this.
+After that we have prepared Refraction and we have defined channels, we have to subscribe something to these channels. In Refraction we can use [subscribe](../api/Subscribe.md) to do this.
 Subscribe function accept an Object that have a series of properties named as the channel that will handle. The handlers accept only one parameter that is the payload of the request.
 
 Let's make an example. If we have a module that publish on channel `onUserLogin` the username (payload), I have to define my subscriber in this way:
