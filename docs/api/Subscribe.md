@@ -14,7 +14,9 @@ Subscribe the given object to events.
 
 ```js
 // subscribe to 'newChatPartecipant' channel
+// set priority to 90 (default 100)
 const subscriber = {
+  refractionLevel: 90,
   newChatPartecipant: (payload) => {
     const { username } = payload;
     alert(`Hi ${username}!`);

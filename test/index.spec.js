@@ -68,6 +68,34 @@ describe('Refraction', () => {
     expect(refraction.mediator.subscribers).toEqual([]);
   });
 
+  it('should subscribe with level', (done) => {
+    let i = 0;
+    const foo = {
+      refractionLevel: 90,
+      onTest: () => {
+        expect(i).toEqual(0);
+        i++;
+      },
+    };
+    const bar = {
+      onTest: () => {
+        expect(i).toEqual(1);
+        i++;
+      },
+    };
+    const lorem = {
+      refractionLevel: 110,
+      onTest: () => {
+        expect(i).toEqual(2);
+        done();
+      },
+    };
+    refraction.subscribe(lorem);
+    refraction.subscribe(foo);
+    refraction.subscribe(bar);
+    refraction.publish('onTest');
+  });
+
   it('should unsubscribe', () => {
     const unknownSubscriber = { onFail: () => false };
     refraction.subscribe(subscriber);
