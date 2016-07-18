@@ -1,6 +1,20 @@
 import Mediator from './Mediator';
 import History from './History';
 
+const getSubscriberLevel = (subscriber) => subscriber.refractionLevel || 100;
+
+const compareFunction = (a, b) => {
+  let result = 0;
+  const aPriority = getSubscriberLevel(a);
+  const bPriority = getSubscriberLevel(b);
+  if (aPriority < bPriority) {
+    result = -1;
+  } else if (aPriority > bPriority) {
+    result = 1;
+  }
+  return result;
+};
+
 export default class Refraction {
 
   middlewares = [];
@@ -30,7 +44,7 @@ export default class Refraction {
   }
 
   subscribe(subscriber) {
-    this.mediator.subscribe(subscriber);
+    this.mediator.subscribe(subscriber, compareFunction);
     return this.unsubscribe.bind(this, subscriber);
   }
 

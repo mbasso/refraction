@@ -2,9 +2,10 @@ export default class Mediator {
 
   subscribers = [];
 
-  subscribe(subscriber) {
+  subscribe(subscriber, compareFunction) {
     if (this.subscribers.indexOf(subscriber) === -1) {
       this.subscribers.push(subscriber);
+      this.subscribers.sort(compareFunction);
     }
   }
 

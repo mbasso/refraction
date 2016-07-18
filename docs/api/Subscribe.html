@@ -44,7 +44,7 @@
     <body>
         
         
-    <div class="book" data-level="4.2" data-basepath="../.." data-revision="Thu Jul 14 2016 09:36:26 GMT+0200 (W. Europe Summer Time)">
+    <div class="book" data-level="4.2" data-basepath="../.." data-revision="Mon Jul 18 2016 19:04:09 GMT+0200 (W. Europe Summer Time)">
     
 
 <div class="book-summary">
@@ -554,7 +554,9 @@
 <p>(<em>Function</em>): A function that unsubscribe the given subscriber. This is the equivalent of <code>unsubscribe(subscriber)</code></p>
 <h4 id="example">Example</h4>
 <pre><code class="lang-js"><span class="token comment" spellcheck="true">// subscribe to &apos;newChatPartecipant&apos; channel</span>
+<span class="token comment" spellcheck="true">// set priority to 90 (default 100)</span>
 <span class="token keyword">const</span> subscriber <span class="token operator">=</span> <span class="token punctuation">{</span>
+  refractionLevel<span class="token punctuation">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
   newChatPartecipant<span class="token punctuation">:</span> <span class="token punctuation">(</span>payload<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> <span class="token punctuation">{</span> username <span class="token punctuation">}</span> <span class="token operator">=</span> payload<span class="token punctuation">;</span>
     <span class="token function">alert</span><span class="token punctuation">(</span>`Hi $<span class="token punctuation">{</span>username<span class="token punctuation">}</span><span class="token operator">!</span>`<span class="token punctuation">)</span><span class="token punctuation">;</span>
