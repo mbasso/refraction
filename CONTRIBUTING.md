@@ -23,7 +23,7 @@ Visit the [issue tracker](https://github.com/mbasso/refraction/issues) to find a
 Fork, then clone the repo:
 
 ```
-git clone https://github.com/your-username/refraction.git
+git clone https://github.com/mbasso/refraction.git
 ```
 
 ### Building
