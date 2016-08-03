@@ -13,7 +13,7 @@ Here is the list of methods that you can use on its instance:
 
 ### Importing
 
-Every function described above is a top-level export. You can import any of them like this:
+You can import it like this:
 
 #### ES6
 
