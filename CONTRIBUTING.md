@@ -1,15 +1,15 @@
 # Contributing
 
-We are pleased to receive any contribution by the community. By contributing to Refraction, you agree to abide by the [code of conduct](https://github.com/reactjs/refraction/blob/master/CODE_OF_CONDUCT.md).
+We are pleased to receive any contribution by the community. By contributing to Refraction, you agree to abide by the [code of conduct](https://github.com/mbasso/refraction/blob/master/CODE_OF_CONDUCT.md).
 
 ## Issues
 
-Before opening an issue, please search the [issue tracker](https://github.com/reactjs/refraction/issues) to make sure your issue hasn’t already been reported.
+Before opening an issue, please search the [issue tracker](https://github.com/mbasso/refraction/issues) to make sure your issue hasn’t already been reported.
 Please follow our guidelines when opening an issue, in that way we can understand your problem easily and we can help you faster.
 
 ### Bugs and Improvements
 
-Bugs and Improvements in general can be discussed on the [issue tracker](https://github.com/reactjs/refraction/issues), make sure that there aren't other issues with the same purpose.
+Bugs and Improvements in general can be discussed on the [issue tracker](https://github.com/mbasso/refraction/issues), make sure that there aren't other issues with the same purpose.
 
 ## Help
 
@@ -18,7 +18,7 @@ If you don’t get a reply on StackOverflow after few days, please contact us on
 
 ## Development
 
-Visit the [issue tracker](https://github.com/reactjs/refraction/issues) to find a list of open issues that need attention.
+Visit the [issue tracker](https://github.com/mbasso/refraction/issues) to find a list of open issues that need attention.
 
 Fork, then clone the repo:
 
