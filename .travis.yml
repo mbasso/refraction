@@ -6,7 +6,7 @@ node_js:
 script:
   - npm run check:src
   - npm run build
-  - npm run check:examples
+  # - npm run check:examples
 branches:
   only:
     - master
